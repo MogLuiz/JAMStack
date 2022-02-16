@@ -1,13 +1,10 @@
-query Page($slug: string!) {
-    page(
-        where: {
-            slug: $slug
-        }
-    ) {
-        title
-        subtitle
-        seo {
-        title
-        description
-        }
+query Page($slug: String!) {
+  page(where: { slug: $slug }) {
+    title
+    subtitle
+    seo {
+      title
+      description
     }
+  }
+}
