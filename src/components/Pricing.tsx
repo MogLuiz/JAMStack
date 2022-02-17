@@ -52,7 +52,7 @@ const tiers = [
   },
 ];
 
-export function Pricing() {
+const Pricing: React.FC = () => {
   return (
     <div className="bg-white">
       <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
@@ -127,4 +127,6 @@ export function Pricing() {
       </div>
     </div>
   );
-}
+};
+
+export default Pricing;
