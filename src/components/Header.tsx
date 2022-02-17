@@ -9,7 +9,7 @@ const navigation = [
   { name: "Blog", href: "/blog" },
 ];
 
-export function Header() {
+const Header: React.FC = () => {
   return (
     <div className="relative bg-gray-50 overflow-hidden">
       <div
@@ -187,4 +187,6 @@ export function Header() {
       </div>
     </div>
   );
-}
+};
+
+export default Header;

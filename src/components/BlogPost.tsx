@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
 type BlogPostProps = {
@@ -14,7 +15,7 @@ type BlogPostProps = {
   };
 };
 
-export function BlogPost({ post }: BlogPostProps) {
+const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
   return (
     <div
       key={post.title}
@@ -55,4 +56,6 @@ export function BlogPost({ post }: BlogPostProps) {
       </div>
     </div>
   );
-}
+};
+
+export default BlogPost;

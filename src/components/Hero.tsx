@@ -3,7 +3,7 @@ type HeroProps = {
   subtitle: string;
 };
 
-export function Hero({ title, subtitle }: HeroProps) {
+const Hero: React.FC<HeroProps> = ({ subtitle, title }) => {
   return (
     <div className="relative bg-gray-50 overflow-hidden">
       <div className="relative pt-6 pb-16 sm:pb-24">
@@ -38,4 +38,6 @@ export function Hero({ title, subtitle }: HeroProps) {
       </div>
     </div>
   );
-}
+};
+
+export default Hero;

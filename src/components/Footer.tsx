@@ -88,7 +88,7 @@ const navigation = {
   ],
 };
 
-export function Footer() {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-800" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -222,4 +222,6 @@ export function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

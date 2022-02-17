@@ -44,7 +44,7 @@ const features = [
   },
 ];
 
-export function Features() {
+const Features: React.FC = () => {
   return (
     <div className="bg-white">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
@@ -78,4 +78,6 @@ export function Features() {
       </div>
     </div>
   );
-}
+};
+
+export default Features;
