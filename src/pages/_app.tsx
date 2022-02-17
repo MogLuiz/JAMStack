@@ -2,6 +2,9 @@
 import { client, ssrCache } from "../lib/urql";
 import { Provider } from "urql";
 
+// Components
+import { Footer, Header } from "../components";
+
 // Styles
 import "../styles/globals.css";
 
@@ -18,7 +21,9 @@ function MyApp({ Component, pageProps }) {
   // -------------------------------------------------
   return (
     <Provider value={client}>
+      <Header />
       <Component {...pageProps} />
+      <Footer />
     </Provider>
   );
 }
