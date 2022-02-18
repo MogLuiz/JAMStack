@@ -1,5 +1,5 @@
 // Packages
-import { GetStaticProps } from "next";
+import { GetStaticPaths, GetStaticProps } from "next";
 import React from "react";
 import { PostDocument } from "../../generated/graphql";
 import { client, ssrCache } from "../../lib/urql";
@@ -8,7 +8,12 @@ const blog: React.FC = () => {
   return <div />;
 };
 
-export default blog;
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: "blocking",
+  };
+};
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   await client.query(PostDocument, { slug: params.slug }).toPromise();
@@ -18,3 +23,5 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     },
   };
 };
+
+export default blog;
