@@ -80,8 +80,8 @@ export default Blog;
 
 export const getStaticProps: GetStaticProps = async () => {
   await Promise.all([
-    await client.query(PageDocument, { slug: "about" }).toPromise(),
-    await client.query(PostsDocument).toPromise(),
+    client.query(PageDocument, { slug: "about" }).toPromise(),
+    client.query(PostsDocument).toPromise(),
   ]);
 
   await client.query(PostsDocument).toPromise();
