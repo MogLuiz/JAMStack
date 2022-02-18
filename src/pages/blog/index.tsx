@@ -1,16 +1,27 @@
 // Packages
-import { GetStaticProps } from "next";
 import React from "react";
+
+// UrQL
 import { client, ssrCache } from "../../lib/urql";
+
+// Components
+import { BlogPost } from "../../components";
+
+// GraphQL Generated
 import {
   PageDocument,
   PostsDocument,
   usePageQuery,
   usePostsQuery,
 } from "../../generated/graphql";
-import { BlogPost } from "../../components";
+
+// Types
+import { GetStaticProps } from "next";
 
 const Blog: React.FC = () => {
+  // -------------------------------------------------
+  // Queries
+  // -------------------------------------------------
   const [
     {
       data: { page },

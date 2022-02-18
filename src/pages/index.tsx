@@ -1,12 +1,19 @@
-// Packages
-import { GetServerSideProps } from "next";
-import Head from "next/head";
-import Image from "next/image";
+// Components
 import { Features, Hero, Pricing } from "../components";
-import { PageDocument, usePageQuery } from "../generated/graphql";
+
+// UrQL
 import { client, ssrCache } from "../lib/urql";
 
+// GraphQL Generated
+import { PageDocument, usePageQuery } from "../generated/graphql";
+
+// Types
+import { GetServerSideProps } from "next";
+
 export default function Home() {
+  // -------------------------------------------------
+  // Queries
+  // -------------------------------------------------
   const [{ data }] = usePageQuery({
     variables: {
       slug: "about",
