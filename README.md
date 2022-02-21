@@ -1,34 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+    <img alt="React Data Fetching Logo" width="400" height="130" src="https://user-images.githubusercontent.com/58401291/155036710-2f59b914-903b-45f7-94f5-b48c0bf96708.png" />
+    <br>
+</h1>
 
-## Getting Started
 
-First, run the development server:
+<h4 align="center">
+JAMStack Blog
+</h4>
 
-```bash
-npm run dev
-# or
+
+<p align="center">
+   <a href="#dart-objetivo">Objetivo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#books-ferramentas">Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-executando-o-projeto">Executando o Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#sunglasses-autor">Autor</a>
+</p>
+
+
+
+## :dart: Objetivo
+
+<p>
+   Esse é um Blog desenvolvido utilizando os conceitos de JAMStack.
+</p>
+
+
+## :books: Ferramentas
+
+-   [x] [Jamstack](https://jamstack.org/)
+-   [x] [GraphQL](https://graphql.org/)
+-   [x] [Urql](https://formidable.com/open-source/urql/)
+-   [x] [NextJS](https://nextjs.org/)
+-   [x] [TailwindCSS](https://tailwindcss.com/)
+-   [x] [NextJS](https://nextjs.org/)
+
+
+
+## :rocket: Executando o Projeto
+
+Primeiramente, você precisa clonar o template do repositório:
+
+```sh
+git clone https://github.com/MogLuiz/JAMStack.git
+```
+
+Navegue até o diretório criado:
+
+```sh
+cd JAMStack
+```
+
+(Opcional) Abra o projeto no VSCode:
+
+```sh
+code .
+```
+
+Instale as dependências do projeto:
+
+```sh
+# Utilizando o yarn
+yarn
+
+# Utilizando o npm
+npm install
+```
+
+Inicie a aplicação:
+
+```sh
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## :sunglasses: Autor
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+| [<img src="https://avatars.githubusercontent.com/u/58401291?v=4" width="75px;"/>][1] |
+| :-------------------------------------------------------------------: |
+|                         [Luiz Henrique][1]                          |
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+[1]: https://github.com/MogLuiz
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
